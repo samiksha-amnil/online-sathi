@@ -1,0 +1,86 @@
+.login-wrap {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+li.nav-item {
+  width: 50%;
+  text-align: center;
+}
+li.nav-item a {
+  color: #757575;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none !important;
+  position: relative;
+  font-size: 18px;
+}
+li.nav-item a.active {
+  color: #2b2b2b !important;
+}
+li.nav-item a.active:after {
+  width: 100% !important;
+  height: 2px;
+  background: #2266bb;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.login-wrap .form-group {
+  margin-bottom: 15px;
+}
+.login-wrap h6 {
+  margin-bottom: 16px;
+}
+.social-account button {
+  width: calc(50% - 10px);
+  color: #ffffff;
+}
+.social-account button i {
+  font-size: 20px;
+}
+.social-account button.btn-facebook {
+  background-color: #3b66c4;
+  margin-right: 16px;
+}
+.social-account button.btn-google {
+  background-color: #d04131;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.btn-verify {
+  border: none;
+  background: #ffffff;
+  color: #747474;
+  right: 1px;
+  position: absolute;
+  bottom: 1px;
+  min-height: 33px;
+}
+/* register as vendor css start */
+.vendor-registration {
+  max-width: 680px;
+}
+h4.title {
+  border-bottom: 2px solid #1a7de2;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+h4.title span {
+  position: relative;
+}
+
+h4.title span:after {
+  position: absolute;
+  content: "";
+  height: 6px;
+  width: calc(100% - 20px);
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff812c;
+}
