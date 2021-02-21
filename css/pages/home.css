@@ -94,12 +94,49 @@ div#timer > div:not(:last-child):after {
 .featured-product img {
   width: 100%;
 }
+
 .product-item {
   margin: 7.5px;
   position: relative;
 }
 .product span.new-tag {
   left: 10px;
+}
+.img-wrap {
+  background-color: #f5f5f5;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.orange-bg button i {
+  margin-right: 5px;
+}
+
+.orange-bg button {
+  background: #fff;
+  border: none;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+.orange-bg {
+  background: #ff812c;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  padding: 10px;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+}
+.img-wrap:hover .orange-bg {
+  transform: translateY(0);
+  transition: all 0.5s ease;
 }
 .item-detail {
   padding: 15px 0;
@@ -151,10 +188,7 @@ ul#stars {
     max-width: 215px;
   }
 }
-.img-wrap {
-  background-color: #f5f5f5;
-  padding: 10px;
-}
+
 .flash-sale {
   background-image: url(../../img/carousel.jpg);
   padding: 20px 0;

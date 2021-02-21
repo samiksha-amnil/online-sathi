@@ -275,6 +275,7 @@ span.new-tag {
   left: 17.5px;
   top: 10px;
   font-size: 12px;
+  z-index: 1;
 }
 @media (min-width: 1023px) and (max-width: 1199px) {
   .wsmenu-list > li > a {
