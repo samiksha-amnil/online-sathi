@@ -1,490 +1,2206 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0,  target-densitydpi=device-dpi">
-    <title>Oline Sathi</title>
-    <link rel="icon" href="img/favicon.ico" type="image/ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0,  target-densitydpi=device-dpi">
+  <title>Oline Sathi</title>
+  <link rel="icon" href="img/favicon.ico" type="image/ico">
 
-    <!-- *************** Font Awesome *************** -->
-    <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- *************** Bootstrap *************** -->
-    <link rel="stylesheet" href="js/vendor/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- *************** webslide menu *************** -->
-    <link rel="stylesheet" href="js/vendor/navigation/webslidemenu.css" />
-    <!-- *************** Google Font *************** -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <!-- *************** Start Common CSS *************** -->
-    <link rel="stylesheet" href="css/common/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/pages/login.css" type="text/css" />
+  <!-- *************** Font Awesome *************** -->
+  <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <!-- *************** Bootstrap *************** -->
+  <link rel="stylesheet" href="js/vendor/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- *************** webslide menu *************** -->
+  <link rel="stylesheet" href="js/vendor/navigation/webslidemenu.css" />
+  <!-- *************** slick slider *************** -->
+  <link rel="stylesheet" href="js/vendor/slick/slick-theme.css" />
+  <link rel="stylesheet" href="js/vendor/slick/slick.css" />
+  <!-- *************** Google Font *************** -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- *************** Start Common CSS *************** -->
+  <link rel="stylesheet" href="css/common/main.css" type="text/css" />
+  <link rel="stylesheet" href="css/pages/home.css" type="text/css" />
 </head>
 
 <body>
-     <!--==== Start Header ====-->
-     <header>
-        <div class="topnavbar">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-4 welcome-text">
-                      Welcome to online saathi, <span class="username">rozen</span>
-                  </div>
-                  <div class="col-md-8 text-right">
-                    <ul>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">faq</a></li>
-                        <li><a href="">newsletter</a></li>
-                        <li><a href="">contact</a></li>
-                        <li><a href="">wishlist</a></li>
-                    </ul>
-                  </div>
-              </div>
-             
+  <!--==== Start Header ====-->
+  <header>
+    <div class="topnavbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 welcome-text">
+            Welcome to online saathi, <span class="username">rozen</span>
+          </div>
+          <div class="col-md-8 text-right">
+            <ul>
+              <li><a href="">Blog</a></li>
+              <li><a href="">faq</a></li>
+              <li><a href="">newsletter</a></li>
+              <li><a href="">contact</a></li>
+              <li><a href="">wishlist</a></li>
+            </ul>
           </div>
         </div>
-        <div class="top-header hide-mobile">
+
+      </div>
+    </div>
+    <div class="top-header hide-mobile">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 logo">
+
+            <img src="img/logo.png" alt="">
+
+          </div>
+          <div class="col-md-5">
+            <form action="" class="category d-flex">
+              
+              <input type="text" placeholder="Search your keyword....">
+              <button class="btn btn-primary d-flex align-items-center">
+                <img src="img/icons/ico-nav-search.png" alt="">
+              </button>
+
+            </form>
+          </div>
+          <div class="col-md-4">
+            <div class="quick-links text-right text-uppercase">
+              <ul>
+                <li><a href=""><img src="img/icons/user.png" class="mr-2">login</a></li>
+                <li><a href=""></i>My cart / <span class="orange ml-2 d-inline-flex align-items-center">34,600 NRs<img
+                        src="img/icons/shopping-bag.png" class="ml-2"></span></a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="wsmenucontainer clearfix bottom-header">
+      <div class="overlapblackbg"></div>
+      <div class="wsmobileheader clearfix"> <a id="wsnavtoggle" class="animated-arrow"><span></span></a> </div>
+
+      <div class="headerfull container">
+        <!--Main Menu HTML Code-->
+        <div class="wsmain">
+          <div class="top-header hide-desktop">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 logo">
-                       
-                        <img src="img/logo.png" alt="">
-                         
-                    </div>
-                    <div class="col-md-5">
-                        <form action="" class="category d-flex">
-                        <select name="" id="" class="mr-1">
-                            <option value="">All category</option>
-                            <option value="">All category</option>
-                            <option value="">All category</option>
-                        </select>
-                        <input type="text" placeholder="Search your keyword....">
-                        <button class="btn btn-primary d-flex align-items-center">
-                            <img src="img/icons/ico-nav-search.png" alt="">
-                         </button>
-                    
-                        </form>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="quick-links text-right text-uppercase">
-                            <ul>
-                              <li><a href=""><img src="img/icons/user.png" class="mr-2">login</a></li>
-                              <li><a href=""></i>My cart / <span class="orange ml-2 d-inline-flex align-items-center">34,600 NRs<img src="img/icons/shopping-bag.png" class="ml-2"></span></a></li>
-                             
-                            </ul>
-                          </div>
-                    </div>
-                </div>
-                
-               
-            </div>
-        </div>
-        <div class="wsmenucontainer clearfix bottom-header">
-            <div class="overlapblackbg"></div>
-            <div class="wsmobileheader clearfix"> <a id="wsnavtoggle" class="animated-arrow"><span></span></a> </div>
-          
-            <div class="headerfull container"> 
-              <!--Main Menu HTML Code-->
-              <div class="wsmain">
-                  <div class="top-header hide-desktop">
-                      <div class="container">
-                         <div class="logo">
-                           <img src="images/logo.svg" alt="">
-                         </div>   
-                         <div class="quick-links ">
-                           <ul>
-                             <li>
-                               <form action="">
-                                 <input type="text" placeholder="Search">
-                               </form>
-                             </li>
-                             <li>
-                               <a href="" class="ebank-login"><i class="fa fa-lock"></i> e-Bank Login</a>  
-                             </li>
-                             <li class="padding-right"><a href=""><i class="fa fa-map-marker"></i>login</a></li>
-                             <li><a href=""><i class="fa fa-percent"></i>My cart / <span class="ornage">34,600 NRs</span></a></li>
-                           </ul>
-                         </div>
-                      </div>
-                  </div>
-                    <nav class="wsmenu clearfix">
-                  <ul class="mobile-sub wsmenu-list">
-                    <li><a href="#" class="navtext"><span>Home</span></a>
-                      <div class="wsshoptabing wtsdepartmentmenu clearfix">
-                        <ul class="wstabitem clearfix">
-                          <li class="wsshoplink-active"><a href="#"></i> About Us</a>
-                            <div class="wstitemright clearfix">
-                              <div class="wstmegamenucoll clearfix">
-                                <ul class="wstliststy01">
-                                  <li><a href="#">
-                                    
-                                    Mission Vision
-                                  </a></li>
-                                  <li><a href="#">
-                                      
-                                      BOD</a></li>
-                                  <li><a href="#">
-                                      
-                                      Management Team</a></li>
-                                  <li><a href="#"> Introduction
-                                     
-                                  </a></li>
-                                  <li><a href="#"> Core Values
-                                     
-                                  </a></li>
-                                  <li><a href="#"> Capital Structure
-                                     
-                                  </a></li>
-                                  <li><a href="#"> Capital Structure
-                                     
-                                  </a></li>
-                                  <li><a href="#"> Capital Structure
-                                     
-                                  </a></li>
-                                  <li><a href="#"> Capital Structure
-                                     
-                                  </a></li>
-                                  <li><a href="#"> Capital Structure
-                                     
-                                  </a></li>
-                                  <li><a href="#"> Capital Structure
-                                     
-                                  </a></li>
-    
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                          <li ><a href="#"></i>Information Officer</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                                <div class="wstmegamenucoll clearfix">
-                                   
-                                    <ul class="wstliststy01">
-                                      <li><a href="#"> 
-                                        Branches & ATMs</a></li>
-                                    </ul>
-                                  </div>
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Vacancies</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                                <div class="wstmegamenucoll clearfix">
-                                  
-                                    <ul class="wstliststy01">
-                                      <li><a href="#"> 
-                                        Internship opportunities</a></li>
-                                    </ul>
-                                  </div>
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Notices</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                                <div class="wstmegamenucoll clearfix">
-                                  
-                                    <ul class="wstliststy01">
-                                      <li><a href="#"> Notice 1</a></li>
-                                      <li><a href="#"> Notice 2</a></li>
-                                    </ul>
-                                  </div>
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Rates</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                                <div class="wstmegamenucoll clearfix">
-                                   
-                                    <ul class="wstliststy01">
-                                      <li><a href="#"> Interest Rates</a></li>
-                                      <li><a href="#"> Standard Tariff Charges</a></li>
-                                      <li><a href="#"> Base Rate</a></li>
-                                      <li><a href="#"> Forex Rate today</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Banking Hours</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                              
-                            </div>
-                          </li>
-                          <li><a href="#"></i>News and Medias</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Investor Relations</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                                <div class="wstmegamenucoll clearfix">
-                                    
-                                    <ul class="wstliststy01">
-                                      <li><a href="#"> AGM Notices</a></li>
-                                      <li><a href="#"> AGM Minutes</a></li>
-                                      <li><a href="#"> Unpaid dividend list</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                          </li>
-                  
-                        </ul>
-                      </div>
-                    </li>
-                    <li><a href="#" class="navtext"><span>Categories</span></a>
-                      <div class="wsshoptabing wtsdepartmentmenu clearfix">
-                        <ul class="wstabitem clearfix">
-                          <li class="wsshoplink-active"><a href="#"></i>JBBL at a Glance</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Quarterly Reports</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Annual Reports</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li><a href="#"></i> Basal Reports & Disclosure</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Base Rate Reports</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                  
-                        </ul>
-                      </div>
-                    </li>
-                    <li><a href="#" class="navtext"><span>About emi Services</span></a>
-                      <div class="wsshoptabing wtsdepartmentmenu clearfix">
-                        <ul class="wstabitem clearfix">
-                          <li class="wsshoplink-active"><a href="#"></i>Saving Accounts</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                                <div class="wstmegamenucoll clearfix">
-                                    <ul class="wstliststy01">
-                                      <li><a href="#">Jyoti Shramjivi Saving Account</a></li>
-                                      <li><a href="#">Jyoti Bumper Saving</a></li>
-                                      <li><a href="#">Staff Saving Account</a></li>
-                                      <li><a href="#">Dibya Jyoti Bachat Khata</a></li>
-                                      <li><a href="#">Jyoti Bal Bachat khata </a></li>
-                                      <li><a href="#">Jyoti Bal Kalyan Bachat Khata </a></li>
-                                      
-                                    </ul>
-                                </div>
-                            </div>
-                          </li>
-                          <li ><a href="#"></i>Fixed Deposits</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                                <div class="wstmegamenucoll clearfix">
-                                    <ul class="wstliststy01">
-                                      <li><a href="#">Details of FD </a></li>                                
-                                    </ul>
-                                </div>
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Loans</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Debit Cards</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Bancassurance</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Other Services</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                  
-                        </ul>
-                      </div>
-                    </li>
-                    <li><a href="#" class="navtext"><span>Giveaways</span></a>
-                      <div class="wsshoptabing wtsdepartmentmenu clearfix">
-                        <ul class="wstabitem clearfix">
-                          <li class="wsshoplink-active"><a href="#"></i>Account</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li ><a href="#"></i>Loans</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li><a href="#"></i>Merchant Services</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>              
-                        </ul>
-                      </div>
-                    </li>
-                    <li><a href="#" class="navtext"><span>Contact</span></a>
-                      <div class="wsshoptabing wtsdepartmentmenu clearfix">
-                        <ul class="wstabitem clearfix">
-                          <li class="wsshoplink-active"><a href="#"></i>Savings</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                          <li ><a href="#"></i>Loans</a>
-                            <div class="wstitemright clearfix wstitemrightactive">
-                            </div>
-                          </li>
-                                      
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    
-          
-                  </ul>
-                </nav>
+              <div class="logo">
+                <img src="images/logo.svg" alt="">
               </div>
-              <!--Menu HTML Code--> 
+              <div class="quick-links ">
+                <ul>
+                  <li>
+                    <form action="">
+                      <input type="text" placeholder="Search">
+                    </form>
+                  </li>
+                  <li>
+                    <a href="" class="ebank-login"><i class="fa fa-lock"></i> e-Bank Login</a>
+                  </li>
+                  <li class="padding-right"><a href=""><i class="fa fa-map-marker"></i>login</a></li>
+                  <li><a href=""><i class="fa fa-percent"></i>My cart / <span class="ornage">34,600 NRs</span></a></li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </header>
-    <!--==== End Header ====-->
+          </div>
+          <nav class="wsmenu clearfix">
+            <ul class="mobile-sub wsmenu-list">
+              <li><a href="#" class="navtext"><span>Home</span></a>
+                <div class="wsshoptabing wtsdepartmentmenu clearfix">
+                  <ul class="wstabitem clearfix">
+                    <li class="wsshoplink-active"><a href="#"></i> About Us</a>
+                      <div class="wstitemright clearfix">
+                        <div class="wstmegamenucoll clearfix">
+                          <ul class="wstliststy01">
+                            <li><a href="#">
 
-    <!--==== Start Login ====-->
-    <div class="container">
-        <div class="login-wrap section-padding">
-            <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab"
-                        aria-controls="login" aria-selected="true">Sign In</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab"
-                        aria-controls="register" aria-selected="false">Register</a>
-                </li>
+                                Mission Vision
+                              </a></li>
+                            <li><a href="#">
+
+                                BOD</a></li>
+                            <li><a href="#">
+
+                                Management Team</a></li>
+                            <li><a href="#"> Introduction
+
+                              </a></li>
+                            <li><a href="#"> Core Values
+
+                              </a></li>
+                            <li><a href="#"> Capital Structure
+
+                              </a></li>
+                            <li><a href="#"> Capital Structure
+
+                              </a></li>
+                            <li><a href="#"> Capital Structure
+
+                              </a></li>
+                            <li><a href="#"> Capital Structure
+
+                              </a></li>
+                            <li><a href="#"> Capital Structure
+
+                              </a></li>
+                            <li><a href="#"> Capital Structure
+
+                              </a></li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Information Officer</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                        <div class="wstmegamenucoll clearfix">
+
+                          <ul class="wstliststy01">
+                            <li><a href="#">
+                                Branches & ATMs</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Vacancies</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                        <div class="wstmegamenucoll clearfix">
+
+                          <ul class="wstliststy01">
+                            <li><a href="#">
+                                Internship opportunities</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Notices</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                        <div class="wstmegamenucoll clearfix">
+
+                          <ul class="wstliststy01">
+                            <li><a href="#"> Notice 1</a></li>
+                            <li><a href="#"> Notice 2</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Rates</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                        <div class="wstmegamenucoll clearfix">
+
+                          <ul class="wstliststy01">
+                            <li><a href="#"> Interest Rates</a></li>
+                            <li><a href="#"> Standard Tariff Charges</a></li>
+                            <li><a href="#"> Base Rate</a></li>
+                            <li><a href="#"> Forex Rate today</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Banking Hours</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+
+                      </div>
+                    </li>
+                    <li><a href="#"></i>News and Medias</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Investor Relations</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                        <div class="wstmegamenucoll clearfix">
+
+                          <ul class="wstliststy01">
+                            <li><a href="#"> AGM Notices</a></li>
+                            <li><a href="#"> AGM Minutes</a></li>
+                            <li><a href="#"> Unpaid dividend list</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" class="navtext"><span>Categories</span></a>
+                <div class="wsshoptabing wtsdepartmentmenu clearfix">
+                  <ul class="wstabitem clearfix">
+                    <li class="wsshoplink-active"><a href="#"></i>JBBL at a Glance</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Quarterly Reports</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Annual Reports</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i> Basal Reports & Disclosure</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Base Rate Reports</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" class="navtext"><span>About emi Services</span></a>
+                <div class="wsshoptabing wtsdepartmentmenu clearfix">
+                  <ul class="wstabitem clearfix">
+                    <li class="wsshoplink-active"><a href="#"></i>Saving Accounts</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                        <div class="wstmegamenucoll clearfix">
+                          <ul class="wstliststy01">
+                            <li><a href="#">Jyoti Shramjivi Saving Account</a></li>
+                            <li><a href="#">Jyoti Bumper Saving</a></li>
+                            <li><a href="#">Staff Saving Account</a></li>
+                            <li><a href="#">Dibya Jyoti Bachat Khata</a></li>
+                            <li><a href="#">Jyoti Bal Bachat khata </a></li>
+                            <li><a href="#">Jyoti Bal Kalyan Bachat Khata </a></li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Fixed Deposits</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                        <div class="wstmegamenucoll clearfix">
+                          <ul class="wstliststy01">
+                            <li><a href="#">Details of FD </a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Loans</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Debit Cards</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Bancassurance</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Other Services</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" class="navtext"><span>Giveaways</span></a>
+                <div class="wsshoptabing wtsdepartmentmenu clearfix">
+                  <ul class="wstabitem clearfix">
+                    <li class="wsshoplink-active"><a href="#"></i>Account</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Loans</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Merchant Services</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" class="navtext"><span>Contact</span></a>
+                <div class="wsshoptabing wtsdepartmentmenu clearfix">
+                  <ul class="wstabitem clearfix">
+                    <li class="wsshoplink-active"><a href="#"></i>Savings</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+                    <li><a href="#"></i>Loans</a>
+                      <div class="wstitemright clearfix wstitemrightactive">
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
+
+
+
             </ul>
-
-            <div class="tab-content">
-                <!-- login -->
-                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
-                    <form>
-                        <div class="form-group">
-                            <label>Username or email address: </label>
-                            <input type="email" class="form-control">
-
-                        </div>
-                        <div class="form-group">
-                            <label>Password: </label>
-                            <input type="password" class="form-control">
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-6">
-                                <label class="checkbox-wrap">Remember me
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <a href="">Lost your Password?</a>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
-                        <div class="social-account">
-                            <p class="text-muted my-4 text-center">Sign in with social accout</p>
-                            <button class="btn btn-facebook"><i class="fa fa-facebook mr-2"></i>Sign in with
-                                Facebook</button>
-                            <button class="btn btn-google"><i class="fa fa-google-plus mr-2"></i>Sign in with Google
-                                +</button>
-
-                        </div>
-                    </form>
-                </div>
-                <!-- register -->
-                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
-                    <form>
-                        <div class="mb-15">
-                            <h6 class="text-uppercase">Personal Information</h6>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>First Name <span class="required">*</span></label>
-                                        <input type="text" class="form-control">
-
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Last Name <span class="required">*</span> </label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Email address <span class="required">*</span> </label>
-                                        <input type="email" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Phone <span class="required">*</span></label>
-                                        <input type="text" class="form-control" placeholder="98XXXXXXXX">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group position-relative">
-                                        <label>Verification Code <span class="required">*</span> </label>
-                                        <input type="number" class="form-control" placeholder="SMS verification code">
-                                        <button class="btn btn-verify">SEND</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-15">
-                            <h6 class="text-uppercase">Personal Information</h6>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Password <span class="required">*</span></label>
-                                        <input type="password" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Confirm Password <span class="required">*</span> </label>
-                                        <input type="password" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="checkbox-wrap pb-3">I agree to the privacy policy
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
-                        <div class="social-account">
-                            <p class="text-muted my-4 text-center">Sign in with social accout</p>
-                            <button class="btn btn-facebook"><i class="fa fa-facebook mr-2"></i>Sign in with
-                                Facebook</button>
-                            <button class="btn btn-google"><i class="fa fa-google-plus mr-2"></i>Sign in with Google
-                                +</button>
-
-                        </div>
-                    </form>
-                </div>
-            </div>
+          </nav>
         </div>
+        <!--Menu HTML Code-->
+      </div>
+    </div>
+  </header>
+  <!--==== End Header ====-->
+
+
+  <div class="container">
+    <!-- ======= start banner ======= -->
+    <div class="banner-section">
+
+      <div class="d-flex justify-content-between">
+        <div class="left-content main-slide">
+          <a href=""><img src="img/slider1.jpg" alt="" style="height: 564px;"></a>
+          <a href=""><img src="img/slider1.jpg" alt="" style="height: 564px;"></a>
+        
+        </div>
+        <div class="right-content">
+          <div class="top">
+            <a href=""><img src="img/slider2.jpg" alt=""></a>
+            <a href=""><img src="img/slider3.jpg" alt=""></a>
+          </div>
+          <div class="bottom position-relative">
+            <a href=""><img src="img/slider2.jpg" alt="" class="img-full">
+            <!-- <div id="timer" class="d-flex justify-content-center">
+              <div id="days"></div>
+              <div id="hours"></div>
+              <div id="minutes"></div>
+              <div id="seconds"></div>
+            </div> -->
+          </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- ======= end banner ======= -->
+
+    <!-- ======= start popular items ======= -->
+    <div class="popular-item">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="img/icons/user.png" alt="" class="mr-2">
+            <div>
+              <h6 class="text-uppercase mb-0">popular among men</h6>
+              <small class="text-muted">Products mostly viewed by men</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="img/icons/user.png" alt="" class="mr-2">
+            <div>
+              <h6 class="text-uppercase mb-0">popular among women</h6>
+              <small class="text-muted">Products mostly viewed by men</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="img/icons/user.png" alt="" class="mr-2">
+            <div>
+              <h6 class="text-uppercase mb-0">EMI popular products</h6>
+              <small class="text-muted">Products mostly viewed by men</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======= end popular items ======= -->
+
+    <div class="login-wrap section-padding">
+      <ul class="nav nav-tabs mb-4 justify-content-center bordered-tab" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="best-tab" data-toggle="tab" href="#best" role="tab" aria-controls="best"
+            aria-selected="true">best on EMI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest"
+            aria-selected="false">Latest arrival</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="featured-tab" data-toggle="tab" href="#featured" role="tab" aria-controls="featured"
+            aria-selected="false">Featured</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <!-- best -->
+        <div class="tab-pane fade show active" id="best" role="tabpanel" aria-labelledby="best-tab">
+          <div class="product">
+            <div class="product-item">
+              <span class="new-tag">new</span>
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- latest -->
+        <div class="tab-pane fade" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+          <div class="product">
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket1.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- featured -->
+        <div class="tab-pane fade" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+          <div class="product">
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket2.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket2.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket2.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket2.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket2.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket2.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket2.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket2.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="img-wrap"><img src="img/jacket2.png" alt=""></div>
+              <div class="item-detail">
+                <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+                <h5 class="orange">34,000NRs</h5>
+                <div class='rating-stars text-center'>
+                  <ul id='stars'>
+                    <li class='star' title='Poor' data-value='1'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Fair' data-value='2'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Good' data-value='3'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='Excellent' data-value='4'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                    <li class='star' title='WOW!!!' data-value='5'>
+                      <i class='fa fa-star fa-fw'></i>
+                    </li>
+                  </ul>
+                  <small class="grey text-uppercase">( 6 Reviews )</small>
+                </div>
+                <button class="btn btn-grey">get on emi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!--==== End Login ====-->
+    <!-- category search start -->
+    <div class="category-search section-padding pt-0">
+      <div class="tab-items d-flex justify-content-center align-items-center mb-3">
+        <div class="search-text">search by category</div>
+        <ul class="nav nav-tabs justify-content-center block-tab" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all"
+              aria-selected="true">All</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="men-tab" data-toggle="tab" href="#men" role="tab" aria-controls="men"
+              aria-selected="false">men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="women-tab" data-toggle="tab" href="#women" role="tab" aria-controls="women"
+              aria-selected="false">women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="electronics-tab" data-toggle="tab" href="#electronics" role="tab"
+              aria-controls="electronics" aria-selected="false">electronics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="household-tab" data-toggle="tab" href="#household" role="tab"
+              aria-controls="household" aria-selected="false">household</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content">
+        <!-- all -->
+        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/cat1.jpg" alt="" class="img-full">
+            </div>
+            <div class="col-md-6">
+              <img src="img/cat2.jpg" alt="" class="img-full">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- men -->
+        <div class="tab-pane fade" id="men" role="tabpanel" aria-labelledby="men-tab">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/cat1.jpg" alt="" class="img-full">
+            </div>
+            <div class="col-md-6">
+              <img src="img/cat2.jpg" alt="" class="img-full">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- women -->
+        <div class="tab-pane fade" id="women" role="tabpanel" aria-labelledby="women-tab">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/cat1.jpg" alt="" class="img-full">
+            </div>
+            <div class="col-md-6">
+              <img src="img/cat2.jpg" alt="" class="img-full">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- electronics -->
+        <div class="tab-pane fade" id="electronics" role="tabpanel" aria-labelledby="electronics-tab">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/cat1.jpg" alt="" class="img-full">
+            </div>
+            <div class="col-md-6">
+              <img src="img/cat2.jpg" alt="" class="img-full">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- household -->
+        <div class="tab-pane fade" id="household" role="tabpanel" aria-labelledby="household-tab">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="img/cat1.jpg" alt="" class="img-full">
+            </div>
+            <div class="col-md-6">
+              <img src="img/cat2.jpg" alt="" class="img-full">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="img/bag.jpg" alt="" class="img-full">
+              <div class="item-detail">
+                <h6>Jackets & coats</h6>
+                <p class="grey">35 products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- category search end -->
 
-   <!--==== Script start ====-->
-   <script src="js/vendor/jquery-1.11.3.min.js" type="text/javascript"></script>
-   <script src="js/vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-   <script src="js/vendor/navigation/webslidemenu.js" type="text/javascript"></script>
-   <script src="js/vendor/slick_slider/slick.min.js" type="text/javascript"></script>
-   <script src="js/common/main.js" type="text/javascript"></script>
+    <!-- fatured product start -->
+    <div class="featured-wrap section-padding pt-0">
+      <div class="title-wrap d-flex justify-content-between align-items-center border-bottom">
+        <h2 class="title mb-0">Featured products</h2>
+        <a href="">view more</a>
+      </div>
+      <div class="featured-product d-lg-flex">
+
+        <div class="product-item featured-item">
+          <div class="img-wrap h-100"><img src="img/jacket3.png" alt=""></div>
+        </div>
+        <div class="row mx-0">
+          <div class="product-item col-md-3">
+            <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+            <div class="item-detail">
+              <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+              <h5 class="orange">34,000NRs</h5>
+              <div class='rating-stars text-center'>
+                <ul id='stars'>
+                  <li class='star' title='Poor' data-value='1'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Fair' data-value='2'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Good' data-value='3'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Excellent' data-value='4'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='WOW!!!' data-value='5'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                </ul>
+                <small class="grey text-uppercase">( 6 Reviews )</small>
+              </div>
+            </div>
+          </div>
+          <div class="product-item col-md-3">
+            <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+            <div class="item-detail">
+              <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+              <h5 class="orange">34,000NRs</h5>
+              <div class='rating-stars text-center'>
+                <ul id='stars'>
+                  <li class='star' title='Poor' data-value='1'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Fair' data-value='2'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Good' data-value='3'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Excellent' data-value='4'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='WOW!!!' data-value='5'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                </ul>
+                <small class="grey text-uppercase">( 6 Reviews )</small>
+              </div>
+            </div>
+          </div>
+          <div class="product-item col-md-3">
+            <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+            <div class="item-detail">
+              <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+              <h5 class="orange">34,000NRs</h5>
+              <div class='rating-stars text-center'>
+                <ul id='stars'>
+                  <li class='star' title='Poor' data-value='1'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Fair' data-value='2'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Good' data-value='3'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Excellent' data-value='4'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='WOW!!!' data-value='5'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                </ul>
+                <small class="grey text-uppercase">( 6 Reviews )</small>
+              </div>
+            </div>
+          </div>
+          <div class="product-item col-md-3">
+            <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+            <div class="item-detail">
+              <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+              <h5 class="orange">34,000NRs</h5>
+              <div class='rating-stars text-center'>
+                <ul id='stars'>
+                  <li class='star' title='Poor' data-value='1'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Fair' data-value='2'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Good' data-value='3'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='Excellent' data-value='4'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                  <li class='star' title='WOW!!!' data-value='5'>
+                    <i class='fa fa-star fa-fw'></i>
+                  </li>
+                </ul>
+                <small class="grey text-uppercase">( 6 Reviews )</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- fatured product end -->
+
+  </div>
+  <div class="flash-sale text-center text-white img-pos">
+
+    <h4 class="text-uppercase">Flash sale</h4>
+    <p class="mb-2">Ends on</p>
+    <div id="timer" class="d-flex justify-content-center">
+      <div id="days"></div>
+      <div id="hours"></div>
+      <div id="minutes"></div>
+      <div id="seconds"></div>
+    </div>
+  </div>
+
+  <!-- all products start -->
+  <section class="all-products section-padding">
+    <div class="container">
+      <div class="featured-product d-flex flex-wrap">
+        <div class="product-item">
+          <span class="new-tag">20% off</span>
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-item">
+          <span class="new-tag">20% off</span>
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-item">
+          <span class="new-tag">20% off</span>
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="" class="text-uppercase view-more">view more products</a>
+      </div>
+    </div>
+  </section>
+  <!-- all products end -->
+
+  <section>
+    <a href=""><img src="img/samsung2.png" alt="" class="img-full"></a>
+  </section>
+
+  <!-- latest product start -->
+  <section class="all-products section-padding">
+    <div class="container">
+      <div class="title-wrap d-flex justify-content-between align-items-center border-bottom">
+        <h2 class="title mb-0">LAtest products</h2>
+        <a href="">view more</a>
+      </div>
+      <div class="featured-product d-flex flex-wrap">
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="img-wrap"><img src="img/sweater.png" alt=""></div>
+          <div class="item-detail">
+            <h6>Whirlpool 2500 Super Cool Refrigrirator</h6>
+            <h5 class="orange">34,000NRs</h5>
+            <div class='rating-stars text-center'>
+              <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+              <small class="grey text-uppercase">( 6 Reviews )</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="" class="text-uppercase view-more">loading more....</a>
+      </div>
+    </div>
+  </section>
+  <!-- latest product end -->
+  <!-- footer start -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>online sathi</h5>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>online sathi</h5>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>online sathi</h5>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>online sathi</h5>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p class="mb-2">Copyright &copy; 2021 - Online Sathi &nbsp; &nbsp; | &nbsp; &nbsp; Website by <a href=""
+          class="text-white">Seshra Innovation</a></p>
+      <ul class="d-flex justify-content-center social-media">
+        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+
+  <!--==== Script start ====-->
+  <script src="js/vendor/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="js/vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/vendor/navigation/webslidemenu.js" type="text/javascript"></script>
+  <script src="js/vendor/slick/slick.min.js" type="text/javascript"></script>
+  <script src="js/common/main.js" type="text/javascript"></script>
+  <script src="js/pages/home.js" type="text/javascript"></script>
 </body>
 
 

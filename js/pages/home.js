@@ -5,15 +5,32 @@ $(document).ready(function() {
         autoplay: true,
         fade: true,
         speed: 2000,
-        dots: true,
         lazyLoad: 'progressive'
     });
-    $('.services-list-wrap').slick({
+    $('.top').slick({
+        arrows: false,
+        autoplay: true,
+        fade: true,
+        speed: 2000,
+        dots: false,
+        lazyLoad: 'progressive'
+    });
+    // $('.bottom').slick({
+    //     arrows: false,
+    //     autoplay: true,
+    //     fade: true,
+    //     speed: 2000,
+    //     dots: false,
+    //     lazyLoad: 'progressive'
+    // });
+    $('.product').slick({
         infinite: false,
+        autoplay: false,
+        arrows: true,
         speed: 300,
-        dots: true,
+        dots: false,
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 1356,
@@ -56,82 +73,43 @@ $(document).ready(function() {
             }
         ]
     });
-    $('.rates-wrap').slick({
-        infinite: false,
-        speed: 300,
-        dots: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-            {
-                breakpoint: 1356,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 580,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+    
+    $(".nav-link").click(function(){
+        $(".product").slick("refresh");
     });
-    $('.tab-slide').slick({
-        infinite: true,
-        speed: 300,
-        dots: false,
-        arrows: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        responsive: [
-            {
-                breakpoint: 1356,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-    $(".msg-box").hide();
-    $(".overlay").hide();
-    $(".msg-open").click(function () {
-        $(".msg-box").fadeToggle(500);
-        $(".overlay").fadeToggle(400);
-    });
+    // countdown timer
 
-    $(".notice-msg").hide();
-    $(".notice").click(function () {
-        $(".notice-msg").toggle(300);
-        $(".notice").toggleClass("left");
-    });
+    function makeTimer() {
 
-    $(".slick-dots").addClass("container");
+        //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+            var endTime = new Date("29 April 2021 9:56:00 GMT+01:00");			
+                endTime = (Date.parse(endTime) / 1000);
+    
+                var now = new Date();
+                now = (Date.parse(now) / 1000);
+    
+                var timeLeft = endTime - now;
+    
+                var days = Math.floor(timeLeft / 86400); 
+                var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+                var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+                var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+      
+                if (hours < "10") { hours = "0" + hours; }
+                if (minutes < "10") { minutes = "0" + minutes; }
+                if (seconds < "10") { seconds = "0" + seconds; }
+    
+                $("#days").html(days + "<span>Days</span>");
+                $("#hours").html(hours + "<span>Hrs</span>");
+                $("#minutes").html(minutes + "<span>Mins</span>");
+                $("#seconds").html(seconds + "<span>Secs</span>");		
+    
+        }
+    
+        setInterval(function() { makeTimer(); }, 1000);
+
+
+
+
+
 });
