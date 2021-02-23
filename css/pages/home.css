@@ -1,11 +1,39 @@
 .banner-section {
   padding: 20px 0;
 }
+.left-menu {
+  width: calc(23% - 10px);
+  background-color: #f5f5f5;
+  padding: 15px;
+  position: relative;
+}
+.left-menu:before {
+  content: "\f0d8";
+  font-family: "FontAwesome";
+  position: absolute;
+  font-size: 50px;
+  top: -46px;
+  left: 18px;
+  color: #f5f5f5;
+}
+.left-menu ul {
+  overflow-y: auto;
+}
+.left-menu h6 {
+  padding: 0 0 12px 0;
+}
+.left-menu li {
+  padding: 12px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+.left-menu li i {
+  margin-right: 10px;
+}
 .left-content {
-  width: calc(68% - 10px);
+  width: calc(51.5% - 10px);
 }
 .right-content {
-  width: calc(32% - 10px);
+  width: calc(25.5% - 10px);
 }
 .right-content .top {
   margin-bottom: 20px;

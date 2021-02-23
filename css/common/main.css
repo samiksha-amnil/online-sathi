@@ -224,6 +224,14 @@ header a {
 .wsmain {
   background-color: #1a7de2;
 }
+.bar-icon {
+  background-color: #ff812c;
+}
+.bar-icon a {
+  color: #fff !important;
+  font-size: 25px !important;
+  padding: 0 20px !important;
+}
 .wsmenu-list > li > .navtext {
   color: #fff;
   text-transform: uppercase;
