@@ -1,71 +1,50 @@
 $(document).ready(function () {
-//    search form js
-    $("#search-toggle").click(function () {
-        $("form").toggleClass("show-search");
+    $('.product').slick({
+        infinite: false,
+        autoplay: false,
+        arrows: true,
+        speed: 300,
+        dots: false,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 780,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 599,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
+    
 });
 
-// Nav Hover Animation
-function highlightMenu(element) {
-    if ($(window).width() >= 1366) {
-        var activeMenu = $('.nav-links li.active a');
-        if (activeMenu.length !== 0) {
-            var actWidth = activeMenu.width();
-            var leftPos = activeMenu.offset().left;
-            $(".active-nav").css({
-                "width": actWidth,
-                "left": leftPos
-            });
-        } else {
-            $(".active-nav").css({
-                "left": '-50%',
-            });
-        }
-    } else {
-//        console.log('here');
-        var activeMenu = $('.nav-links li.active a');
-        if (activeMenu.length !== 0) {
-            var actWidth = activeMenu.width();
-            var leftPos = activeMenu.offset().left;
-            $(".active-nav").css({
-                "width": actWidth,
-                "left": leftPos
-            });
-        } else {
-            $(".active-nav").css({
-                "left": '-50%',
-            });
-        }
-    }
-}
-function highlightHoverMenu(element) {
-    if ($(window).width() >= 1366) {
-        var hoverWidth = element.width();
-        var hoverPos = element.offset().left;
-        $(".active-nav").css({
-            "width": hoverWidth,
-            "left": hoverPos
-        });
-    } else {
-        var hoverWidth = element.width();
-        var hoverPos = element.offset().left;
-        $(".active-nav").css({
-            "width": hoverWidth,
-            "left": hoverPos
-        });
-    }
-}
-
-$(window).load(function () {
-    highlightMenu();
-    $(".nav-links li a").mouseenter(function () {
-        highlightHoverMenu($(this));
-    });
-    $(".nav-links li a").mouseleave(function () {
-        highlightMenu($(".nav-links .active"));
-    });
-});
-
-$(window).resize(function () {
-    highlightMenu();
-});

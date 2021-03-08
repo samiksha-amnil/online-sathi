@@ -109,9 +109,21 @@ ol li {
 .required {
   color: red;
 }
+.bg-orange,
+.bg-blue {
+  background-color: #ff812c;
+  color: #fff;
+  padding: 2px 10px;
+}
+.bg-blue {
+  background-color: #1a7de2;
+}
 .container {
   max-width: 1680px;
   width: 100%;
+}
+table td {
+  vertical-align: top;
 }
 /*======= custom checkbox css start====== */
 .checkbox-wrap {
@@ -245,6 +257,7 @@ header a {
 .wsmenu-list > li > a {
   color: #0366ae;
   font-size: 17px;
+  line-height: 53px;
 }
 .wsmenu-list > li > .navtext > span:after {
   font-size: 18px;
