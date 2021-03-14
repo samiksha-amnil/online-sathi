@@ -125,8 +125,9 @@ ol li {
 table td {
   vertical-align: top;
 }
+
 /*======= custom checkbox css start====== */
-.checkbox-wrap {
+.custom-btn-wrap {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -139,7 +140,7 @@ table td {
 }
 
 /* Hide the browser's default checkbox */
-.checkbox-wrap input {
+.custom-btn-wrap input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -160,12 +161,12 @@ table td {
 }
 
 /* On mouse-over, add a grey background color */
-.checkbox-wrap:hover input ~ .checkmark {
+.custom-btn-wrap:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.checkbox-wrap input:checked ~ .checkmark {
+.custom-btn-wrap input:checked ~ .checkmark {
   background-color: #1a7de2;
   border: none;
 }
@@ -178,12 +179,12 @@ table td {
 }
 
 /* Show the checkmark when checked */
-.checkbox-wrap input:checked ~ .checkmark:after {
+.custom-btn-wrap input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.checkbox-wrap .checkmark:after {
+.custom-btn-wrap .checkmark:after {
   left: 7px;
   top: 2px;
   width: 6px;
@@ -195,6 +196,37 @@ table td {
   transform: rotate(45deg);
 }
 /*======= custom checkbox css end ====== */
+/*========== custom radio btn =========== */
+
+/* Create a custom radio button */
+.custom-radio .checkmark {
+  border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio input:checked ~ .checkmark {
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #757575;
+  border: none;
+}
+
+/*========== custom radio btn =========== */
 
 @media screen and (max-device-width: 1023px) {
   body {
@@ -274,6 +306,60 @@ header a {
 .topnavbar ul li a {
   color: #747474;
 }
+.shopping-cart-list {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 6px #989898;
+  z-index: 999;
+  right: 0;
+  text-align: left;
+  font-size: 11px;
+  min-width: 360px;
+  color: #757575;
+  top: 51px;
+  height: 0;
+  overflow: hidden;
+}
+.shopping-cart-list:before {
+  content: "\f0d8";
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 38px;
+  position: absolute;
+  top: -35px;
+  right: 11px;
+  text-shadow: 0px -4px 4px #d0d0d0;
+}
+.shopping-bag:hover .shopping-cart-list {
+  height: auto !important;
+  padding: 10px;
+  overflow: visible;
+}
+.shopping-cart-list td,
+.shopping-cart-list th {
+  padding: 10px 5px;
+  border-top: none;
+  border-bottom: 1px solid #e3e3e3;
+  vertical-align: middle;
+}
+.shopping-cart-list tr td:nth-child(2) {
+  max-width: 150px;
+}
+.shopping-cart-list span.order-count button.btn {
+  min-height: 25px;
+  padding: 0;
+  min-width: 18px;
+}
+.shopping-cart-list .order-count span {
+  padding: 0 10px;
+}
+.cart-btn > .btn {
+  width: calc(50% - 5px);
+}
+.default-font {
+  font-size: 12px;
+}
+
 .welcome-text {
   font-weight: 600;
   color: #2b2b2b;
@@ -371,6 +457,10 @@ form.category input {
   width: 100%;
   border-radius: 4px 0 0 4px;
 }
+.form-control,
+.border {
+  border-color: #e3e3e3 !important;
+}
 form.category .btn {
   border: none;
   border-radius: 0 4px 4px 0;
@@ -459,6 +549,22 @@ form.category .btn {
   right: 0;
 }
 /* slick styler style end*/
+
+/* order count */
+.order-count {
+  border: 1px solid #e3e3e3;
+  display: inline-flex;
+}
+.order-count .btn {
+  background: transparent;
+}
+.order-count span {
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  padding: 0 21px;
+  display: inline-flex;
+  align-items: center;
+}
 
 /* footer css start */
 .footer-top {
