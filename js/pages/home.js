@@ -25,7 +25,7 @@ $(document).ready(function() {
     //     lazyLoad: 'progressive'
     // });
 
-    $('.featured-item-wrap').slick({
+    $('.product-item-wrap').slick({
         infinite: false,
         autoplay: false,
         arrows: true,

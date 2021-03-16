@@ -1,5 +1,5 @@
 .banner-section {
-  padding: 20px 0;
+  padding: 15px 0;
 }
 .left-menu {
   width: calc(23% - 10px);
@@ -36,7 +36,7 @@
   width: calc(25.5% - 10px);
 }
 .right-content .top {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 /* timer css */
 #timer > div {
@@ -119,7 +119,7 @@ div#timer > div:not(:last-child):after {
 }
 /* bordered tab css start  */
 .product img,
-.featured-product img {
+.product-list img {
   width: 100%;
 }
 
@@ -216,10 +216,10 @@ ul#stars {
   margin-left: 5px;
 }
 
-.featured-product {
+.product-list {
   margin: 0 -7.5px;
 }
-.featured-product .product-item {
+.product-list .product-item {
   padding: 0 7.5px;
   margin: 0;
 }
