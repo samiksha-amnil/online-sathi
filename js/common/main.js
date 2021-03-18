@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $("nav ul li").children("ul").parent().addClass("caret")
     $('.product').slick({
         infinite: false,
         autoplay: false,

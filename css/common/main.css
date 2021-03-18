@@ -265,35 +265,66 @@ header {
 header a {
   color: #747474;
 }
-.wsmain {
+
+nav {
   background-color: #1a7de2;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+nav > ul > li {
+  padding: 10px 15px;
+  position: relative;
+}
+nav > ul > li > a {
+  color: #fff;
+  line-height: 23px;
+}
+nav > ul > li > a:hover {
+  color: #ffffff;
+}
+nav ul li ul {
+  display: none;
+}
+nav a {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+nav > ul > li:hover ul {
+  display: block;
+}
+nav .caret {
+  padding: 10px 20px 10px 15px;
+}
+nav .caret::before {
+  content: "\f107";
+  font-family: FontAwesome;
+  font-size: 21px;
+  position: absolute;
+  top: 6px;
+  right: 2px;
+  color: #fff;
 }
 .bar-icon {
   background-color: #ff812c;
 }
 .bar-icon a {
   color: #fff !important;
-  font-size: 25px !important;
-  padding: 0 20px !important;
+  font-size: 20px !important;
 }
-.wsmenu-list > li > .navtext {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: "open sans";
+nav ul li ul {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  top: 44px;
 }
-.ul.mobile-sub.wsmenu-list > li > a {
-  padding-left: 0;
+nav ul li ul li {
+  padding: 12px 16px;
 }
-.wsmenu-list > li > a {
-  color: #0366ae;
-  font-size: 17px;
-  line-height: 53px;
-}
-.wsmenu-list > li > .navtext > span:after {
-  font-size: 18px;
-}
+
 .topnavbar {
   background-color: #f2f3f5;
   text-transform: uppercase;

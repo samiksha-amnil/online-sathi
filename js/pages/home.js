@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 
+
     $('.main-slide').slick({
         arrows: false,
         autoplay: true,
@@ -16,14 +17,6 @@ $(document).ready(function() {
         dots: false,
         lazyLoad: 'progressive'
     });
-    // $('.bottom').slick({
-    //     arrows: false,
-    //     autoplay: true,
-    //     fade: true,
-    //     speed: 2000,
-    //     dots: false,
-    //     lazyLoad: 'progressive'
-    // });
 
     $('.product-item-wrap').slick({
         infinite: false,
