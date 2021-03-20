@@ -1,16 +1,13 @@
-.width-24 {
-  width: 24%;
-}
-.width-47 {
-  width: 47%;
-  padding: 0 30px;
-}
+.width-24,
+.width-47,
 .width-29 {
-  width: 29%;
-  overflow: hidden;
+  width: 100%;
 }
 .padding-15 {
   padding: 15px 0;
+}
+.d-flex.flex-wrap > div {
+  margin-bottom: 15px;
 }
 .product-images img {
   background: #f5f5f5;
@@ -181,4 +178,79 @@ table tr {
 }
 table p {
   margin-bottom: 0;
+}
+
+.emi-dialog .modal-dialog {
+  max-width: 780px;
+}
+.emi-modal-wrap {
+  border: none;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.emi-modal-wrap li a {
+  color: #757575;
+  border: none !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+}
+.emi-modal-wrap li a.active {
+  color: #fbb102 !important;
+  border-bottom: 6px solid !important;
+}
+.banks,
+.plan {
+  width: 100%;
+}
+.emi-dialog h6 {
+  margin-bottom: 20px;
+}
+.emi-modal-tab {
+  border: none;
+  flex-direction: column;
+  border: none !important;
+}
+.emi-modal-tab li a {
+  border: none !important;
+  font-size: 16px;
+  padding: 10px;
+}
+.emi-modal-tab li a.active {
+  background-color: #f5f5f5 !important;
+  color: #1a7de2 !important;
+  font-weight: 600;
+  border-radius: 0;
+}
+.available-plan {
+  background-color: #f5f5f5;
+  padding: 0 30px;
+  height: calc(100% - 18px - 20px);
+}
+.available-plan .table th {
+  border-top: none;
+}
+.available-plan .table td .btn {
+  min-height: 30px;
+  width: 100%;
+  border-radius: 0;
+}
+@media (min-width: 1024px) {
+  .banks {
+    width: 200px;
+  }
+  .plan {
+    width: calc(100% - 200px);
+  }
+  .width-24 {
+    width: 24%;
+  }
+  .width-47 {
+    width: 47%;
+    padding: 0 30px;
+  }
+  .width-29 {
+    width: 29%;
+    overflow: hidden;
+  }
 }
