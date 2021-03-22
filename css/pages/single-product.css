@@ -235,6 +235,23 @@ table p {
   width: 100%;
   border-radius: 0;
 }
+
+/* login modal css start */
+.login-wrap {
+  padding: 10px 10px 20px;
+}
+button.close {
+  position: absolute;
+  background-color: #e8351f;
+  opacity: 1;
+  color: #fff !important;
+  padding: 5px 20px;
+  top: -35px;
+  font-size: 14px;
+  font-weight: 400;
+  right: 0;
+}
+/* login modal css end */
 @media (min-width: 1024px) {
   .banks {
     width: 200px;

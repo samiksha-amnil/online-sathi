@@ -3,11 +3,11 @@
   margin: 0 auto;
 }
 
-li.nav-item {
+.login-wrap li.nav-item {
   width: 50%;
   text-align: center;
 }
-li.nav-item a {
+.login-wrap li.nav-item a {
   color: #757575;
   text-transform: uppercase;
   font-weight: 600;
@@ -15,10 +15,10 @@ li.nav-item a {
   position: relative;
   font-size: 18px;
 }
-li.nav-item a.active {
+.login-wrap li.nav-item a.active {
   color: #2b2b2b !important;
 }
-li.nav-item a.active:after {
+.login-wrap li.nav-item a.active:after {
   width: 100% !important;
   height: 2px;
   background: #2266bb;
