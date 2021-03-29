@@ -408,6 +408,9 @@ nav ul li ul li {
 .orange {
   color: #ff812c;
 }
+.blue {
+  color: #1a7de2;
+}
 span.new-tag {
   position: absolute;
   background-color: #ff812c;
@@ -502,6 +505,12 @@ form.category .btn {
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+}
+button.close {
+  font-size: 14px;
+}
+.modal-header {
   align-items: center;
 }
 /* modal css end */
@@ -666,8 +675,18 @@ nav.side-nav li {
   width: 100%;
   padding: 15px;
 }
+nav.side-nav li.active {
+  background-color: #f5f5f5;
+}
+nav.side-nav li.active a {
+  color: #1a7de2;
+  font-weight: 600;
+}
 nav.side-nav li a {
   color: #757575;
+}
+nav.side-nav li a:hover {
+  color: #1a7de2;
 }
 nav.side-nav li a i {
   margin-right: 15px;
@@ -675,6 +694,7 @@ nav.side-nav li a i {
 .page-content {
   background-color: #f5f5f5;
   width: calc(100% - 200px);
+  min-height: calc(100vh - 170px);
   padding: 20px 30px 30px;
 }
 .bordered-bg {
@@ -708,5 +728,14 @@ ul.pagination a {
 ul.pagination li.active a {
   background-color: transparent;
   color: #1a7de2;
+}
+@media (max-width: 1023px) {
+  .page-content,
+  nav.side-nav {
+    width: 100%;
+  }
+  .page-content {
+    padding: 15px;
+  }
 }
 /* dahboard pages css start */

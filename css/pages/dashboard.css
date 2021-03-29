@@ -1,0 +1,26 @@
+.icon {
+  color: #1a7de2;
+  margin-right: 12px;
+  font-size: 23px;
+}
+.product-detail {
+  margin: 0 -7.5px;
+}
+.slick-arrow {
+  background: #e4e4e4 !important;
+  width: 30px;
+  height: 30px;
+  top: -18px;
+  right: 0;
+  left: initial !important;
+  box-shadow: none !important;
+}
+.slick-prev {
+  right: 35px;
+}
+p {
+  margin-bottom: 5px;
+}
+h5 {
+  margin-bottom: 15px;
+}

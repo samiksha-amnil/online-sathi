@@ -20,7 +20,7 @@
         rel="stylesheet">
     <!-- *************** Start Common CSS *************** -->
     <link rel="stylesheet" href="css/common/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/pages/login.css" type="text/css" />
+    <link rel="stylesheet" href="css/pages/delivery.css" type="text/css" />
 </head>
 
 <body>
@@ -164,64 +164,108 @@
         <nav class="side-nav">
             <ul>
                 <li><a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a></li>
-                <li><a href="delivery-detail.html"><i class="fa fa-car"></i>Delivery Address</a></li>
+                <li  class="active"><a href="delivery-detail.html"><i class="fa fa-car"></i>Delivery Address</a></li>
                 <li><a href="my-order.html"><i class="fa fa-cart-plus"></i>My Orders</a></li>
                  <li><a href="review.html"><i class="fa fa-comments"></i>My Reviews</a></li>
                 <li><a href="wishlist.html"><i class="fa fa-heart-o"></i>Wishlist</a></li>
-                <li  class="active"><a href="profile-settings.html"><i class="fa fa-cog"></i>Profile Setiings</a></li>
+                <li><a href="profile-settings.html"><i class="fa fa-cog"></i>Profile Setiings</a></li>
                 <li><a href=""><i class="fa fa-sign-out"></i>Logout</a></li>
             </ul>
         </nav>
         <div class="page-content">
-            <h1 class="page-title">Account Settings</h1>
-            <div class="bg-white mb-3 bordered-bg">
-                <h5 class="title-section">Basic Information</h5>
-                <form action="">
-                    <div class="row form-group">
-                        <label class="col-md-2">Your Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control">
+            <h1 class="page-title">Delivery Details</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="bg-white bordered-bg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Home Address</h5>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <a href="" class="orange"><i class="fa fa-edit mr-2"></i>EDIT</a>
+                            </div>
+                        </div>
+                        <table class="w-100 mb-2">
+                            <tr>
+                                <td>Region</td>
+                                <td>: Bagmati</td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>: Bhaktapur</td>
+                            </tr>
+                            <tr>
+                                <td>Area</td>
+                                <td>: Thimi</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>: Harsa chowk inner road</td>
+                            </tr>
+                        </table>
+                        <div class="row border-top pt-3">
+                            <div class="col-md-6">
+                                <label class="custom-btn-wrap"><i>Default Shipping Address</i>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="custom-btn-wrap"><i>Default Billing Address</i>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    <div class="row form-group">
-                        <label class="col-md-2">Your Phone</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white bordered-bg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Office Address</h5>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <a href="" class="orange"><i class="fa fa-edit mr-2"></i>EDIT</a>
+                            </div>
+                        </div>
+                        <table class="w-100 mb-2">
+                            <tr>
+                                <td>Region</td>
+                                <td>: Bagmati</td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>: Bhaktapur</td>
+                            </tr>
+                            <tr>
+                                <td>Area</td>
+                                <td>: Thimi</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>: Harsa chowk inner road</td>
+                            </tr>
+                        </table>
+                        <div class="row border-top pt-3">
+                            <div class="col-md-6">
+                                <label class="custom-btn-wrap"><i>Default Shipping Address</i>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="custom-btn-wrap"><i>Default Billing Address</i>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    <div class="row form-group">
-                        <label class="col-md-2">Your Password</label>
-                        <div class="col-md-10">
-                            <input type="password" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label class="col-md-2">Confirm Password</label>
-                        <div class="col-md-10">
-                            <input type="password" class="form-control">
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <button class="btn bg-orange">Save & Update</button>
-                    </div>
-                </form>
+                </div>
             </div>
-            <div class="bg-white bordered-bg">
-                <h5 class="title-section">Change your email</h5>
-                <form action="">
-                    <div class="row form-group">
-                        <label class="col-md-2">Your email addres</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    
-                    <div class="text-right">
-                        <button class="btn bg-orange">Send Verification</button>
-                    </div>
-                </form>
-            </div>
-            
+           
+           
         </div>
     </div>
   </div>

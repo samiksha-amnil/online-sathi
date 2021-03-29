@@ -160,22 +160,23 @@
   </header>
   <!--==== End Header ====-->
   <div class="container">
-    <div class="page-content-wrap d-flex">
+    <div class="page-content-wrap d-flex flex-wrap">
         <nav class="side-nav">
             <ul>
-                <li><a href=""><i class="fa fa-dashboard"></i>Dashboard</a></li>
-                <li><a href=""><i class="fa fa-dashboard"></i>Delivery Address</a></li>
-                <li><a href=""><i class="fa fa-dashboard"></i>My Orders</a></li>
-                <li><a href=""><i class="fa fa-dashboard"></i>My Reviews</a></li>
-                <li><a href=""><i class="fa fa-dashboard"></i>Wishlist</a></li>
-                <li><a href=""><i class="fa fa-dashboard"></i>Profile Setiings</a></li>
-                <li><a href=""><i class="fa fa-dashboard"></i>Logout</a></li>
+              <li><a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+              <li><a href="delivery-detail.html"><i class="fa fa-car"></i>Delivery Address</a></li>
+              <li><a href="my-order.html"><i class="fa fa-cart-plus"></i>My Orders</a></li>
+               <li><a href="review.html"><i class="fa fa-comments"></i>My Reviews</a></li>
+              <li class="active"><a href="wishlist.html"><i class="fa fa-heart-o"></i>Wishlist</a></li>
+              <li><a href="profile-settings.html"><i class="fa fa-cog"></i>Profile Setiings</a></li>
+              <li><a href=""><i class="fa fa-sign-out"></i>Logout</a></li>
             </ul>
         </nav>
         <div class="page-content">
             <h1 class="page-title">My Wishlist</h1>
             <div class="bg-white mb-3 bordered-bg">
-              <table class="table mb-0">
+              <div class="table-responsive">
+                <table class="table mb-0">
                   <tr>
                       <td>
                           <div class="d-flex align-items-center">
@@ -190,9 +191,12 @@
                       <td><button class="btn bg-orange"><i class="fa fa-cart-plus"></i>Add to card</button></td>
                   </tr>
               </table>
+              </div>
+            
             </div>
             <div class="bg-white mb-3 bordered-bg">
-              <table class="table mb-0">
+              <div class="table-responsive">
+                <table class="table mb-0">
                   <tr>
                       <td>
                           <div class="d-flex align-items-center">
@@ -207,9 +211,12 @@
                       <td><button class="btn bg-orange"><i class="fa fa-cart-plus"></i>Add to card</button></td>
                   </tr>
               </table>
+              </div>
+              
             </div>
             <div class="bg-white bordered-bg">
-              <table class="table mb-0">
+              <div class="table-responsive">
+                <table class="table mb-0">
                   <tr>
                       <td>
                           <div class="d-flex align-items-center">
@@ -224,6 +231,8 @@
                       <td><button class="btn bg-orange"><i class="fa fa-cart-plus"></i>Add to card</button></td>
                   </tr>
               </table>
+              </div>
+              
             </div>
             <ul class="pagination">
                 <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
@@ -244,7 +253,7 @@
    <script src="js/vendor/jquery-1.11.3.min.js" type="text/javascript"></script>
    <script src="js/vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
    <script src="js/vendor/navigation/webslidemenu.js" type="text/javascript"></script>
-   <script src="js/vendor/slick_slider/slick.min.js" type="text/javascript"></script>
+   <script src="js/vendor/slick/slick.min.js" type="text/javascript"></script>
    <script src="js/common/main.js" type="text/javascript"></script>
 </body>
 

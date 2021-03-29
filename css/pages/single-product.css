@@ -235,7 +235,91 @@ table p {
   width: 100%;
   border-radius: 0;
 }
+#specification table {
+  width: 100%;
+}
+#specification table tr {
+  border: none;
+}
+#specification table tr td {
+  padding: 5px 20px 5px 0;
+}
+.view-all {
+  border-top: 1px solid #e3e3e3;
+  padding-top: 10px;
+}
+.view-all a {
+  font-weight: 600;
+}
+.rating-wrap {
+  margin-bottom: 20px;
+}
+.five-star .progress-bar,
+.four-star .progress-bar,
+.three-star .progress-bar {
+  background-color: #398e3b;
+}
+.two-star .progress-bar {
+  background-color: #ff9f00;
+}
+.one-star .progress-bar {
+  background-color: #ff6160;
+}
 
+.rating > div {
+  display: flex;
+  align-items: center;
+}
+.rating > div span {
+  width: 43px;
+}
+.rating > div span b {
+  min-width: 10px;
+  display: inline-block;
+  font-weight: 400;
+}
+.rating .progress {
+  width: 170px;
+  margin-right: 20px;
+  height: 6px;
+}
+.rating-wrap .col-md-2 span {
+  width: 100%;
+  display: block;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+.rating-wrap > div {
+  position: relative;
+}
+.rating-wrap > div:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: #e3e3e3;
+  right: 20px;
+  top: 0;
+}
+.review-info {
+  font-size: 12px;
+}
+.review-info .fa-check-circle {
+  font-size: 16px;
+  margin-left: 8px;
+}
+.review-info .col-md-6.text-right span {
+  margin-left: 20px;
+  color: #a4a4a4;
+}
+.review-info .col-md-6.text-right span i {
+  font-size: 18px;
+  margin-right: 8px;
+}
+.review-item {
+  border-top: 1px solid #e3e3e3;
+  padding: 20px 0;
+}
 /* login modal css start */
 .login-wrap {
   padding: 10px 10px 20px;
@@ -251,6 +335,7 @@ button.close {
   font-weight: 400;
   right: 0;
 }
+
 /* login modal css end */
 @media (min-width: 1024px) {
   .banks {

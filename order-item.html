@@ -20,7 +20,8 @@
         rel="stylesheet">
     <!-- *************** Start Common CSS *************** -->
     <link rel="stylesheet" href="css/common/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/pages/login.css" type="text/css" />
+    <link rel="stylesheet" href="css/pages/wishlist.css" type="text/css" />
+    <link rel="stylesheet" href="css/pages/my-order.css" type="text/css" />
 </head>
 
 <body>
@@ -165,63 +166,102 @@
             <ul>
                 <li><a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a></li>
                 <li><a href="delivery-detail.html"><i class="fa fa-car"></i>Delivery Address</a></li>
-                <li><a href="my-order.html"><i class="fa fa-cart-plus"></i>My Orders</a></li>
+                <li  class="active"><a href="my-order.html"><i class="fa fa-cart-plus"></i>My Orders</a></li>
                  <li><a href="review.html"><i class="fa fa-comments"></i>My Reviews</a></li>
                 <li><a href="wishlist.html"><i class="fa fa-heart-o"></i>Wishlist</a></li>
-                <li  class="active"><a href="profile-settings.html"><i class="fa fa-cog"></i>Profile Setiings</a></li>
+                <li><a href="profile-settings.html"><i class="fa fa-cog"></i>Profile Setiings</a></li>
                 <li><a href=""><i class="fa fa-sign-out"></i>Logout</a></li>
             </ul>
         </nav>
         <div class="page-content">
-            <h1 class="page-title">Account Settings</h1>
-            <div class="bg-white mb-3 bordered-bg">
-                <h5 class="title-section">Basic Information</h5>
-                <form action="">
-                    <div class="row form-group">
-                        <label class="col-md-2">Your Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label class="col-md-2">Your Phone</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label class="col-md-2">Your Password</label>
-                        <div class="col-md-10">
-                            <input type="password" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label class="col-md-2">Confirm Password</label>
-                        <div class="col-md-10">
-                            <input type="password" class="form-control">
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <button class="btn bg-orange">Save & Update</button>
-                    </div>
-                </form>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="page-title">My Orders</h1>
+                </div>
             </div>
-            <div class="bg-white bordered-bg">
-                <h5 class="title-section">Change your email</h5>
-                <form action="">
-                    <div class="row form-group">
-                        <label class="col-md-2">Your email addres</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control">
+           
+            <div class="bg-white mb-3 bordered-bg pending">
+              <div class="row mb-3">
+                  <div class="col-md-8">
+                      <h5 class="mb-0"> Order No: <strong>#1928369976</strong></h5>
+                      <small>Placed on: 18 Jul 2020</small>
+                  </div>
+                  <div class="col-md-4 text-right">
+                      <a href="" class="orange">View Details</a>
+                  </div>
+              </div>
+              <div class="d-flex order-process justify-content-center">
+                  <div class="active">
+                      <div></div>
+                      <p>Processing</p>
+                  </div>
+                  <div class="active">
+                      <div></div>
+                      <p>Shipped</p>
+                  </div>
+                  <div>
+                      <div></div>
+                      <p>Delivered</p>
+                  </div>
+                  
+              </div>
+              <table class="table mb-0">
+                  <tr>
+                      <td>
+                          <div class="d-flex align-items-center">
+                            <div class="img-wrap" style="background-image: url(img/camera.png);"></div>
+                            <p>Best gloves for biking and cooking double combo</p>
+                          </div>
+                       
+                      </td>
+                     
+                      <td>Qty - 1</td>
+                      <td><span class="orange">Rs 25,000</span></td>
+                      <td>
+                        <div class="d-flex flex-column">
+                            
+                            <small><i>Estimated to arrive on</i></small>
+                            <strong class="blue mb-0">19 Jul 2020</strong>
+                        </div>
+                      </td>
+                  </tr>
+              </table>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="bg-white mb-3 bordered-bg pending">
+                        <h5>Shipping Address</h5>
+                        <p>Bagmati, Bhaktapur, Thimi Area, Dadhikot</p>
+                    </div>
+                    <div class="bg-white bordered-bg pending">
+                        <h5>Billing Address</h5>
+                        <p>Bagmati, Bhaktapur, Thimi Area, Dadhikot</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white mb-3 bordered-bg pending">
+                        <h5>Billing Address</h5>
+                        <table class="w-100 order-item mb-3">
+                            <tr>
+                                <td>Sub Total</td>
+                                <td>Rs. 25,000</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping Fee</td>
+                                <td>Rs. 25</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td><h5 class="orange">Rs. 25,025</h5></td>
+                            </tr>
+                        </table>
+                        <div class="text-center">
+                           <b><i>Paid by - Cash on Delivery</i></b>
                         </div>
                     </div>
-                    
-                    <div class="text-right">
-                        <button class="btn bg-orange">Send Verification</button>
-                    </div>
-                </form>
+                </div>
             </div>
-            
+           
         </div>
     </div>
   </div>
