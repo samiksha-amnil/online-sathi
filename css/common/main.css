@@ -444,7 +444,6 @@ nav ul li ul li {
 .parent-menu li a {
   padding: 0 10px;
   display: block;
-  color: #1b1b28;
   position: relative;
   text-transform: capitalize;
   white-space: nowrap;
@@ -513,6 +512,7 @@ nav ul li ul li {
     align-items: center;
     position: absolute;
     right: 10px;
+    columns: #747474;
     top: 5px;
   }
   .left-menu > div {
@@ -541,6 +541,9 @@ nav ul li ul li {
   .sub-menu li:last-child {
     border-bottom: none;
     padding-bottom: 0;
+  }
+  .parent-menu li a {
+    padding: 0;
   }
 }
 @media (min-width: 1024px) {
