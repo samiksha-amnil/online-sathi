@@ -725,6 +725,15 @@ button.close {
 }
 /* slick styler style end*/
 
+/* before price css start */
+.before-price {
+  font-weight: 600;
+  color: #a4a4a4;
+  text-decoration: line-through;
+  margin: 0 11px;
+}
+/* before price css end */
+
 /* order count */
 .order-count {
   border: 1px solid #e3e3e3;
