@@ -98,7 +98,7 @@ $(document).ready(function() {
         }
     
         setInterval(function() { makeTimer(); }, 1000);
-        var test =  $(".left-content img").outerHeight() - 80;
-        $(".left-menu ul").height(test);
+        // var test =  $(".left-content img").outerHeight() - 80;
+        // $(".left-menu ul").height(test);
 
 });

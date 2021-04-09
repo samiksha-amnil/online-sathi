@@ -46,6 +46,16 @@ $(document).ready(function () {
             }
         ]
     });
-    
+ 
+   $(".nav-link-icon").click(function(){
+    $(".left-menu").addClass("show-menu")
+    $("body").addClass("no-scroll")
+   });
+   $(".close-btn").click(function(){
+    $(".left-menu").removeClass("show-menu")
+    $("body").removeClass("no-scroll")
+   });
+    $('.parent-menu li:has(.sub-menu)').addClass('icon');
+    // $('.parent-menu li .sub-menu:has(.sub-menu)').addClass('border-right');
 });
 
