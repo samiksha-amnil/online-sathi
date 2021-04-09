@@ -1,8 +1,14 @@
-$('table').each(function(){
-    if (!$(this).parent().hasClass('table-responsive')) {
-        if ($(this).attr("id") == undefined || $(this).attr("id") == "") {
-            $(this).wrap("<div class='table-responsive'></div>");
-            $(this).addClass("nmb-table");
-        }
-    }
+$(document).ready(function () {
+
+ 
+   $(".bar-icon").click(function(){
+    $(".left-menu").toggleClass("show-menu")
+   });
+
+//    $(".bar-icon").hover(function(){
+//     $(".left-menu").addClass("show-menu")
+//     }, function(){
+//         $(".left-menu").removeClass("show-menu")
+//   });
+
 });

@@ -23,147 +23,596 @@
     rel="stylesheet">
   <!-- *************** Start Common CSS *************** -->
   <link rel="stylesheet" href="css/common/main.css" type="text/css" />
-  <link rel="stylesheet" href="css/pages/home.css" type="text/css" />
+  <link rel="stylesheet" href="css/common/inner-all.css" type="text/css" />
   <link rel="stylesheet" href="css/pages/login.css" type="text/css" />
   <link rel="stylesheet" href="css/pages/single-product.css" type="text/css" />
 </head>
 
 <body>
-  <!--==== Start Header ====-->
-  <header>
-    <div class="topnavbar">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 welcome-text">
-            Welcome to online saathi, <span class="username">rozen</span>
-          </div>
-          <div class="col-md-8 text-right">
-            <ul>
-              <li><a href="">Blog</a></li>
-              <li><a href="">faq</a></li>
-              <li><a href="">newsletter</a></li>
-              <li><a href="">contact</a></li>
-              <li><a href="">wishlist</a></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="top-header">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-3 logo">
-
-            <img src="img/logo.png" alt="">
-
-          </div>
-          <div class="col-md-5">
-            <form action="" class="category d-flex">
-              
-              <input type="text" placeholder="Search your keyword....">
-              <button class="btn btn-primary d-flex align-items-center">
-                <img src="img/icons/ico-nav-search.png" alt="">
-              </button>
-
-            </form>
-          </div>
-          <div class="col-md-4">
-            <div class="quick-links text-right text-uppercase">
+    <!--==== Start Header ====-->
+    <header>
+      <div class="topnavbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 welcome-text">
+              Welcome to online saathi, <span class="username">rozen</span>
+            </div>
+            <div class="col-md-8 text-right hide-mobile">
               <ul>
-                <li><a href=""><img src="img/icons/user.png" class="mr-2">login</a></li>
-                <li>My cart / 
-                  <span class="orange ml-2 d-inline-flex align-items-center">34,600 NRs</span>
-                  <span class="orange position-relative shopping-bag"><img src="img/icons/shopping-bag.png" class="ml-2"> <b>1</b>
-                    <div class="shopping-cart-list">
-                      <table class="table">
-                        <tr>
-                          <td><img src="img/cat1.jpg" alt=""></td>
-                          <td>MSI Monitor 24 Inch - Super Display</td>
-                          <td>
-                            <span class="order-count">
-                              <button class="btn">-</button>
-                              <span>1</span>
-                              <button class="btn">+</button>
-                          </span>
-                          </td>
-                          <td><strong class="orange">24,000 NRs</strong></td>
-                        </tr>
-                        <tr>
-                          <td><img src="img/cat1.jpg" alt=""></td>
-                          <td>MSI Monitor 24 Inch - Super Display</td>
-                          <td>
-                            <span class="order-count">
-                              <button class="btn">-</button>
-                              <span>1</span>
-                              <button class="btn">+</button>
-                          </span>
-                          </td>
-                          <td><strong class="orange">24,000 NRs</strong></td>
-                        </tr>
-                        <tr>
-                          <td><img src="img/cat1.jpg" alt=""></td>
-                          <td>MSI Monitor 24 Inch - Super Display</td>
-                          <td>
-                            <span class="order-count">
-                              <button class="btn">-</button>
-                              <span>1</span>
-                              <button class="btn">+</button>
-                          </span>
-                          </td>
-                          <td><strong class="orange">24,000 NRs</strong></td>
-                        </tr>
-                      </table>
-                      <div class="d-flex justify-content-between default-font mb-2">
-                        <strong>SUBTOTAL</strong>
-                        <strong>34,600 NRs</strong>
-                      </div>
-                      <div class="cart-btn d-flex justify-content-between">
-                        <button class="btn btn-primary">View Cart Page</button>
-                        <button class="btn bg-orange">Proceed to Checkout</button>
-                      </div>
-                    </div>
-                  </span>
-                </li>
-
+                <li><a href="">Blog</a></li>
+                <li><a href="">faq</a></li>
+                <li><a href="">newsletter</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">wishlist</a></li>
               </ul>
             </div>
           </div>
+  
         </div>
-
-
       </div>
-    </div>
-    <div class="bottom-header">
-    
-     
-      <div class=" container">
-        <!--Main Menu HTML Code-->
-     
+      <div class="top-header">
+        <div class="container">
+          <div class="row align-items-center position-relative">
+            <div class="nav-link-icon hide-desktop">
+              <span class="fa fa-bars"></span>
+            </div>
+            <div class="col-md-3 logo">
+  
+              <img src="img/logo.png" alt="">
+              
+  
+            </div>
+            <div class="col-md-5">
+              <form action="" class="category d-flex">
+                
+                <input type="text" placeholder="Search your keyword....">
+                <button class="btn btn-primary d-flex align-items-center">
+                  <img src="img/icons/ico-nav-search.png" alt="">
+                </button>
+  
+              </form>
+            </div>
+            <div class="col-md-4">
+              <div class="quick-links text-right text-uppercase">
+                <ul>
+                  <li><a href=""><img src="img/icons/user.png" class="mr-2">login</a></li>
+                  <li>My cart / 
+                    <span class="orange ml-2 d-inline-flex align-items-center">34,600 NRs</span>
+                    <span class="orange position-relative shopping-bag"><img src="img/icons/shopping-bag.png" class="ml-2"> <b>1</b>
+                      <div class="shopping-cart-list">
+                        <table class="table">
+                          <tr>
+                            <td><img src="img/cat1.jpg" alt=""></td>
+                            <td>MSI Monitor 24 Inch - Super Display</td>
+                            <td>
+                              <span class="order-count">
+                                <button class="btn">-</button>
+                                <span>1</span>
+                                <button class="btn">+</button>
+                            </span>
+                            </td>
+                            <td><strong class="orange">24,000 NRs</strong></td>
+                          </tr>
+                          <tr>
+                            <td><img src="img/cat1.jpg" alt=""></td>
+                            <td>MSI Monitor 24 Inch - Super Display</td>
+                            <td>
+                              <span class="order-count">
+                                <button class="btn">-</button>
+                                <span>1</span>
+                                <button class="btn">+</button>
+                            </span>
+                            </td>
+                            <td><strong class="orange">24,000 NRs</strong></td>
+                          </tr>
+                          <tr>
+                            <td><img src="img/cat1.jpg" alt=""></td>
+                            <td>MSI Monitor 24 Inch - Super Display</td>
+                            <td>
+                              <span class="order-count">
+                                <button class="btn">-</button>
+                                <span>1</span>
+                                <button class="btn">+</button>
+                            </span>
+                            </td>
+                            <td><strong class="orange">24,000 NRs</strong></td>
+                          </tr>
+                        </table>
+                        <div class="d-flex justify-content-between default-font mb-2">
+                          <strong>SUBTOTAL</strong>
+                          <strong>34,600 NRs</strong>
+                        </div>
+                        <div class="cart-btn d-flex justify-content-between">
+                          <button class="btn btn-primary">View Cart Page</button>
+                          <button class="btn bg-orange">Proceed to Checkout</button>
+                        </div>
+                      </div>
+                    </span>
+                  </li>
+  
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+  
+        </div>
+      </div>
+      <div class="bottom-header">
       
        
-          <nav>
-            <ul>
-              <li class="bar-icon"><a href=""><i class="fa fa-bars"></i></a></li>
-              <li><a href="">Home</a></li>
-              <li><a href="">Categories</a>
-                <ul>
-                  <li><a href="">Clothing</a></li>
-                  <li><a href="">Clothing</a></li>
-                  <li><a href="">Clothing</a></li>
+        <div class=" container">
+          <!--Main Menu HTML Code-->
+       
+        
+         
+            <nav class="hide-mobile">
+              <ul>
+                <li class="bar-icon"><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Categories</a>
+                  <ul>
+                    <li><a href="">Clothing</a></li>
+                    <li><a href="">Clothing</a></li>
+                    <li><a href="">Clothing</a></li>
+                  </ul>
+                </li>
+                <li><a href="">About EMI</a></li>
+                <li><a href="">Giveaways</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="left-menu">
+              <div>
+                <div class="close-btn hide-desktop">
+                  <i class="fa fa-times"></i>
+                </div>
+                <ul class="hide-desktop">
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">faq</a></li>
+                  <li><a href="">newsletter</a></li>
+                  <li><a href="">contact</a></li>
+                  <li><a href="">wishlist</a></li>
                 </ul>
-              </li>
-              <li><a href="">About EMI</a></li>
-              <li><a href="">Giveaways</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!--Menu HTML Code-->
-     
-    </div>
-  </header>
-  <!--==== End Header ====-->
+                <ul class="parent-menu hide-desktop mb-3">
+                 
+                  <li><a href="">Home</a></li>
+                  <li><a  href="javascript:void(0)">Categories</a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="">Clothing</a></li>
+                        <li><a href="">Clothing</a></li>
+                        <li><a href="">Clothing</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="">About EMI</a></li>
+                  <li><a href="">Giveaways</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+                <h6 class="text-uppercase mb-0 border-bottom">browse our category</h6>
+                <ul class="parent-menu">
+                
+  
+                  <li><a href="javascript:void(0)"><i class="fa fa-camera"></i> mobile and tablets</a>
+                    <div class="sub-menu">
+                      <ul>
+                        
+  
+                        <li><a href="javascript:void(0)">Ximomi</a>
+                          <div class="sub-menu">
+                            <ul>
+                              
+  
+                              <li><a href="javascript:void(0)">Note 8 pro</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">Note 9</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">A2</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="javascript:void(0)">Samsung</a>
+                          <div class="sub-menu">
+                            <ul>
+                            
+  
+                              <li><a href="javascript:void(0)">M31</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">Galaxy S20</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">A71</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="javascript:void(0)">Huwawei</a>
+                          <div class="sub-menu">
+                            <ul>
+                              
+  
+                              <li><a href="javascript:void(0)">Nova 8 pro</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">Nova 8 SE</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">Y78</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="javascript:void(0)"><i class="fa fa-camera"></i> Computers and Laptops</a>
+                    <div class="sub-menu">
+                      <ul>
+                        
+  
+                        <li><a href="javascript:void(0)">Asus</a>
+                          <div class="sub-menu">
+                            <ul>
+                              
+  
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="javascript:void(0)">Acer</a>
+                          <div class="sub-menu">
+                            <ul>
+                              
+  
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a>
+                                      <div class="sub-menu">
+                                        <ul>
+                                        
+  
+                                          <li><a href="javascript:void(0)">Tops</a></li>
+                                          <li><a href="javascript:void(0)">Sweatshirt</a></li>
+                                          <li><a href="javascript:void(0)">Shirt</a></li>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="javascript:void(0)">Samsung</a>
+                          <div class="sub-menu">
+                            <ul>
+                              
+  
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="javascript:void(0)"><i class="fa fa-camera"></i> Camera</a>
+                    <div class="sub-menu">
+                      <ul>
+                      
+  
+                        <li><a href="javascript:void(0)">Nikon</a>
+                          <div class="sub-menu">
+                            <ul>
+                              
+  
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="javascript:void(0)">Sony</a>
+                          <div class="sub-menu">
+                            <ul>
+                              
+  
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="javascript:void(0)">Samsung</a>
+                          <div class="sub-menu">
+                            <ul>
+                              
+  
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li><a href="javascript:void(0)">routers</a>
+                                <div class="sub-menu">
+                                  <ul>
+                                    
+  
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                    <li><a href="javascript:void(0)">USB</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      
+                      </ul>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Menu HTML Code-->
+       
+      </div>
+    </header>
+    <!--==== End Header ====-->
+
+
   <!-- start single product detail -->
   <section class="padding-15">
       <div class="container">
@@ -1265,6 +1714,7 @@
   <script src="js/vendor/navigation/webslidemenu.js" type="text/javascript"></script>
   <script src="js/vendor/slick/slick.min.js" type="text/javascript"></script>
   <script src="js/common/main.js" type="text/javascript"></script>
+  <script src="js/common/inner-all.js" type="text/javascript"></script>
   <script src="js/pages/single-product.js" type="text/javascript"></script>
 </body>
 

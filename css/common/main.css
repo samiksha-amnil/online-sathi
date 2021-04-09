@@ -308,6 +308,8 @@ nav .caret::before {
 }
 .bar-icon {
   background-color: #ff812c;
+  position: relative;
+  z-index: 9;
 }
 .bar-icon a {
   color: #fff !important;
@@ -406,6 +408,32 @@ nav ul li ul li {
   width: 140px;
 }
 /* mega menu css start */
+.left-menu {
+  background-color: #f5f5f5;
+  padding: 15px;
+  position: relative;
+  width: 200px;
+}
+.left-menu:before {
+  content: "\f0d8";
+  font-family: "FontAwesome";
+  position: absolute;
+  font-size: 50px;
+  top: -46px;
+  left: 12px;
+  color: #f5f5f5;
+}
+
+.left-menu h6 {
+  padding: 0 0 12px 0;
+}
+.left-menu li {
+  padding: 12px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+.left-menu li i {
+  margin-right: 10px;
+}
 .left-menu > div {
   width: 100%;
 }
