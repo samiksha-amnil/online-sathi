@@ -403,7 +403,28 @@ nav ul li ul li {
 .top-header {
   padding: 15px 0;
 }
-
+.seacrh-list {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  z-index: 1;
+  background-color: #fff !important;
+  box-shadow: 4px 4px 4px -4px #0000003b;
+  padding: 10px 15px !important;
+  display: none;
+}
+.show-search-list {
+  display: block;
+}
+.seacrh-list li {
+  padding: 5px 0;
+}
+.seacrh-list li a {
+  display: block;
+}
+input:focus {
+  outline: none;
+}
 .logo img {
   width: 140px;
 }

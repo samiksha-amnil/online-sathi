@@ -55,7 +55,12 @@ $(document).ready(function () {
     $(".left-menu").removeClass("show-menu")
     $("body").removeClass("no-scroll")
    });
+   $(".category input").focus(function(){
+    $(".seacrh-list").addClass("show-search-list")
+   });
+   $(".category input").focusout(function(){
+    $(".seacrh-list").removeClass("show-search-list")
+   });
     $('.parent-menu li:has(.sub-menu)').addClass('icon');
-    // $('.parent-menu li .sub-menu:has(.sub-menu)').addClass('border-right');
 });
 
